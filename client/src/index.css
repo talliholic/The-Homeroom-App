@@ -1,0 +1,117 @@
+:root {
+  --blue-dark: #1e3a8a; /* Dark blue */
+  --blue-medium: #3f8bc4; /* Medium blue */
+  --blue-light: #6ea0d5; /* Light blue */
+  --blue-pale: #b4d5eb; /* Pale blue */
+  --blue-very-light: #d6e6f3; /* Very light blue */
+  --blue-ultra-light: #eaf2f8; /* Ultra light blue */
+  --blue-very-dark: #0f1e4a; /* Very dark blue */
+  --blue-grayish: #7a9db5; /* Grayish blue */
+  --blue-teal: #008080; /* Teal blue */
+  --blue-cyan: #00ffff; /* Cyan blue */
+  --white: #ffffff; /* White */
+}
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--blue-very-dark);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+body {
+  background-color: var(--blue-very-light);
+}
+
+button {
+  color: var(--blue-very-light);
+  background-color: var(--blue-teal);
+  border: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: var(--blue-very-light);
+  color: var(--blue-very-dark);
+  border: 1px solid var(--blue-very-dark);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: var(--blue-teal);
+  padding: 10px;
+}
+
+form p {
+  text-align: center;
+  color: var(--blue-ultra-light);
+  margin: 5px 0;
+  border-bottom: 1px solid var(--blue-ultra-light);
+  padding-bottom: 5px;
+}
+
+input {
+  padding: 3px;
+}
+
+input[type="submit"] {
+  border: 1.5px solid var(--blue-ultra-light);
+  background-color: var(--blue-teal);
+  color: var(--blue-ultra-light);
+  font-weight: bold;
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--blue-very-light);
+  color: var(--blue-very-dark);
+  border: 1.5px solid var(--blue-very-light);
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.input-group label {
+  color: var(--blue-ultra-light);
+  font-weight: bold;
+}
+
+main,
+section {
+  margin: 0 auto;
+  width: fit-content;
+  padding: 10px;
+}
+
+main h1 {
+  margin: 10px 0;
+}
+
+nav {
+  background-color: var(--blue-very-dark);
+}
+
+nav h1 {
+  padding: 10px;
+  margin: 0;
+  color: var(--blue-ultra-light);
+  font-size: 40px;
+}
