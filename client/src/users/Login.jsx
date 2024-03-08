@@ -16,8 +16,10 @@ export default function Login() {
       password: e.target.Password.value,
     }
     const result = await post("/users/login", body)
-    if (result.status === 200) dispatch(fetchUser())
-    else setFeedback("Check your credentials.")
+    if (result.status === 200) {
+      dispatch(fetchUser())
+      window.location.reload()
+    } else setFeedback("Check your credentials.")
   }
 
   return (

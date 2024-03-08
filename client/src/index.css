@@ -27,6 +27,13 @@ h6 {
   text-align: center;
 }
 
+.active {
+  color: var(--blue-ultra-light);
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid var(--blue-ultra-light);
+}
+
 body {
   background-color: var(--blue-very-light);
 }
@@ -38,6 +45,7 @@ button {
   font-size: 16px;
   padding: 5px 10px;
   font-weight: bold;
+  margin: 0 5px;
 }
 
 button:hover {
@@ -46,12 +54,53 @@ button:hover {
   border: 1px solid var(--blue-very-dark);
 }
 
+.buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--blue-ultra-light);
+  padding: 10px;
+}
+
+.card p {
+  text-align: justify;
+  padding: 10px;
+}
+
+.card small {
+  font-weight: bold;
+  font-size: 13px;
+  margin: 5px;
+}
+
+.content {
+  white-space: pre-wrap;
+  text-align: justify;
+}
+
 form {
   display: flex;
   flex-direction: column;
   width: 300px;
   background-color: var(--blue-teal);
   padding: 10px;
+}
+
+form a {
+  color: var(--blue-ultra-light);
+  font-weight: bold;
+  margin: 5px;
+}
+
+form a:hover {
+  font-style: italic;
 }
 
 form p {
@@ -89,9 +138,33 @@ input[type="submit"]:hover {
   margin: 5px;
 }
 
-.input-group label {
+.input-group-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.input-group-column {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  gap: 8.5px;
+}
+
+.input-group label,
+.input-group-column label,
+.input-group-nav label {
   color: var(--blue-ultra-light);
   font-weight: bold;
+}
+
+.input-group-column label {
+  text-align: center;
+}
+
+.input-group-nav label {
+  margin-right: 10px;
 }
 
 main,
@@ -105,8 +178,20 @@ main h1 {
   margin: 10px 0;
 }
 
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  column-gap: 100px;
+  row-gap: 20px;
+}
+
 nav {
   background-color: var(--blue-very-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 7px;
 }
 
 nav h1 {
@@ -114,4 +199,33 @@ nav h1 {
   margin: 0;
   color: var(--blue-ultra-light);
   font-size: 40px;
+}
+
+nav .link {
+  color: var(--blue-ultra-light);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav .link:hover {
+  text-decoration: underline;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+  gap: 20px;
+}
+
+select {
+  background-color: var(--blue-very-light);
+  padding: 3px;
+  color: var(--blue-very-dark);
+  font-weight: bold;
+}
+
+textarea {
+  padding: 5px;
 }

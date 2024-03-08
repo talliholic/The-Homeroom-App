@@ -1,4 +1,12 @@
-export default function Input({ name, type, value, autoFocus, required }) {
+export default function Input({
+  name,
+  type,
+  value,
+  ongoingValue,
+  autoFocus,
+  required,
+  onChange,
+}) {
   return (
     <div className="input-group">
       <label htmlFor={name}>{name}:</label>
@@ -6,7 +14,9 @@ export default function Input({ name, type, value, autoFocus, required }) {
         autoFocus={autoFocus}
         name={name}
         type={type}
+        onChange={onChange}
         id={name}
+        value={ongoingValue}
         defaultValue={value}
         required={required}
       />

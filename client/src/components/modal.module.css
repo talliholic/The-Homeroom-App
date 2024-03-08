@@ -1,0 +1,54 @@
+.overlay {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #eaf2f8;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #008080;
+}
+
+.header h2 {
+  margin: 5px auto;
+  padding: 0 10px;
+  color: #eaf2f8;
+}
+
+.header button {
+  font-weight: bold;
+  margin: 0;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  font-size: 18px;
+  padding: 0 5px;
+}
+
+.header button:hover {
+  background-color: #0f1e4a;
+  color: #eaf2f8;
+  border: none;
+}
+
+.body {
+  padding: 10px;
+  background-color: #eaf2f8;
+}

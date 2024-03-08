@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux"
-import { fetchUser } from "../slice"
-import { get } from "../../utils/requests"
+import { fetchUser } from "./slice"
+import { get } from "../utils/requests"
 
 export default function Logout() {
   const dispatch = useDispatch()

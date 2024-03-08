@@ -5,6 +5,7 @@ import cookieParser from "cookie-parser"
 import authenticateUser from "./middleware/authenticateUser.js"
 import usersRouter from "./routes/users.js"
 import studentsRouter from "./routes/students.js"
+import reportsRouter from "./routes/reports.js"
 
 const app = express()
 
@@ -23,5 +24,7 @@ app.use("/users", usersRouter)
 app.use(authenticateUser)
 
 app.use("/students", studentsRouter)
+
+app.use("/reports", reportsRouter)
 
 app.listen(5000, () => console.log("Server up on port " + 5000))
